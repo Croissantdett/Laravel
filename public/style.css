@@ -1,0 +1,105 @@
+/*PARTIE ADD EVENT*/
+body {
+    background-color: #f0f0f0; /* Fond légèrement gris pour une meilleure visibilité */
+    color: #000;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 13px;
+    box-shadow: 5px 10px 20px 10px rgba(143, 143, 143, 0.5);
+    text-align: center;
+    width: 530px; /* Largeur ajustée */
+}
+
+.container h1 {
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.container label {
+    color: #000;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    text-align: left; /* Alignement à gauche */
+}
+
+.container input[type="text"],
+.container input[type="date"],
+.container input[type="number"] {
+    color: #000000;
+    width: 100%; /* Pleine largeur */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.container input[type="text"].error,
+.container input[type="date"].error {
+    border: 1px solid #ff0000;
+}
+
+.submit-btn {
+    background-color: #2c8e0e; /* Couleur verte */
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.1s ease-out;
+    width: 100%; /* Pleine largeur pour le bouton */
+}
+
+.submit-btn:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.home-link {
+    display: block;
+    padding: 10px 15px;
+    background-color: #458ed1; /* Couleur bleue pour le lien */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-top: 25px;
+}
+
+.home-link:hover {
+    background-color: #357ab8; /* Couleur au survol */
+}
+
+.error {
+    color: #ff0000;
+    margin-top: -10px; /* Un peu de marge négative pour rapprocher du champ */
+    font-size: 0.9rem; /* Taille ajustée pour le texte d'erreur */
+}
+
+/* Autres styles pour les alertes */
+.alert.alert-danger {
+    color: #ff0000;
+    background-color: #ffa8a8;
+    border: 2px solid #ff8a80;
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Media queries pour une meilleure adaptabilité */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Plus petit sur mobile */
+    }
+}
